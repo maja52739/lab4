@@ -28,6 +28,7 @@ elif [ "$1" == "--error" || "$1" == "-e" ]; then
 elif [ "$1" == "--help" || "$1" == "-h" ]; then
 	echo "Dostępne opcje:"
 	echo "--logs (-l) [liczba_plików] : utworzenie określonej liczby plików logx.txt (domyślnie 100)"
+	echo "--error (-e) [liczba_plików] : utworzenie określonej liczby katalogów i plików errorx/errox.txt (domyślnie 100"
 	echo "--date (-d) : wyświetla dzisiejszą datę"
 	echo "--help (-h) : wyświetla pomoc"
 
