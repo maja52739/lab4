@@ -17,6 +17,7 @@ elif [ "$1" == "--logs" || "$1" == "-l" ]; then
 
 elif [ "$1" == "--help" || "$1" == "-h" ]; then
 	echo "Dostępne opcje:"
-	echo "--logs [liczba_plików] : utworzenie określonej liczby plików logx.txt (domyślnie 100)"
-	echo "--date : wyświetla dzisiejszą datę"
+	echo "--logs (-l) [liczba_plików] : utworzenie określonej liczby plików logx.txt (domyślnie 100)"
+	echo "--date (-d) : wyświetla dzisiejszą datę"
+	echo "--help (-h) : wyświetla pomoc"
 fi
