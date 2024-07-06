@@ -20,4 +20,9 @@ elif [ "$1" == "--help" || "$1" == "-h" ]; then
 	echo "--logs (-l) [liczba_plików] : utworzenie określonej liczby plików logx.txt (domyślnie 100)"
 	echo "--date (-d) : wyświetla dzisiejszą datę"
 	echo "--help (-h) : wyświetla pomoc"
+
+elif [ "$1" == "--init" ]; then
+	clone_dir=$(pwd)/repo
+	git clone https://github.com/maja52739/lab4.git "$clone_dir"
+	export PATH="$clone_dir:$PATH"
 fi
