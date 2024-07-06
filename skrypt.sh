@@ -1,8 +1,8 @@
 #!/bin/bash
-if [ "$1" == "--date" ]; then
+if [ "$1" == "--date" || "$1" == "-d" ]; then
 	date
 
-elif [ "$1" == "--logs" ]; then
+elif [ "$1" == "--logs" || "$1" == "-l" ]; then
 	if [[ -n "$2" ]]; then
 		num=$2
 	else
@@ -15,7 +15,7 @@ elif [ "$1" == "--logs" ]; then
 		echo "Data utworzenia: $(date)" >> $filename
 	done
 
-elif [ "$1" == "--help" ]; then
+elif [ "$1" == "--help" || "$1" == "-h" ]; then
 	echo "Dostępne opcje:"
 	echo "--logs [liczba_plików] : utworzenie określonej liczby plików logx.txt (domyślnie 100)"
 	echo "--date : wyświetla dzisiejszą datę"
